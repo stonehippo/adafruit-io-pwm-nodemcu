@@ -2,7 +2,7 @@
 
 A simple remote control application for controlling PWM on a single pin on an esp8266 microcontroller. The app connects to an MQTT broker and subscribes to a topic that publishes a single integer value. Thie value is then used to set the PWM duty cycle for a pin on the esp8266.
 
-While this app uses the MQTT broker provided by the [Adafruit IO](https://io.adafruit.com) service, any MQTT 3.1+ compatible broker should work.
+While this app uses the MQTT broker provided by the [Adafruit IO](https://io.adafruit.com) service, any MQTT 3.1+ compatible broker should work. Edit the connection information in `io.lua` if you want to move to a different broker.
 
 ## Application
 
