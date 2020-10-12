@@ -6,12 +6,20 @@ p=4
 pwm.setup(p,1000,0)
 pwm.start(p)
 
+function check(data)
+	local value = tonumber(data)
+	if value == nil then return nil
+	elseif value > 1023 or value < 0 then return nil
+	else return value end
+end
+
 -- set up MQTT event callbacks, connect and subscribe
 m=mqtt.Client(cid,120,uid,pwd)
 m:on("connect",function(client) print("connect") end)
 m:on("offline",function(client) print("offline") end)
 m:on("message",function(client,topic,data)
-	if data ~= nil then
+	local value = check(data)
+	if value ~= nil then
 		print("set pwm:"..data)
 		pwm.setduty(p,data)
 		print("pwm:"..pwm.getduty(p))
