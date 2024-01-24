@@ -10,7 +10,7 @@ These files need to get loaded onto the esp8266 for the application to work:
 
 - `init.lua`: Runs at startup
 - `app.lua`: The main application
-- `net.lua`: Wifi setep
+- `net.lua`: Wifi setup
 - `net_secrets.lua`: Wifi credentials. You need to create this file; see `net_secrets.template` for the format
 - `io.lua`: MQTT broker connection and events
 - `io_secrets.lua`: MQTT crendentials and the topic to subscribe to. Use `io_secrets.template` as the basis.
