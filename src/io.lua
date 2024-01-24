@@ -26,7 +26,7 @@ m:on("message",function(client,topic,data)
 	end
 end)
 
-m:connect("io.adafruit.com",8883,1,1,
+m:connect("io.adafruit.com",8883,1,
 	function(client)
 		print("connected")
 		m:subscribe(topic,0,function(client) print("subscribed") end)
