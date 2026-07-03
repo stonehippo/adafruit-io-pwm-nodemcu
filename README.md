@@ -21,7 +21,7 @@ See https://nodemcu.readthedocs.io/en/latest/upload/ for help with uploading cod
 
 The application was built on NodeMCU firmware, and needs a few modules to run. Two appropriate firmware images are provided.
 
-Both builds include the same libraries: file, gpio, i2c, mqtt, net, node, pwm, tmr, uart, wifi, tls.
+Both builds include the same libraries: [file](https://nodemcu.readthedocs.io/en/release/modules/file/), [gpio](https://nodemcu.readthedocs.io/en/release/modules/gpio/), [i2c](https://nodemcu.readthedocs.io/en/release/modules/i2c/), [mqtt](https://nodemcu.readthedocs.io/en/release/modules/mqtt/), [net](https://nodemcu.readthedocs.io/en/release/modules/net/), [node](https://nodemcu.readthedocs.io/en/release/modules/node/), [pwm](https://nodemcu.readthedocs.io/en/release/modules/pwm/), [tmr](https://nodemcu.readthedocs.io/en/release/modules/tmr/), [uart](https://nodemcu.readthedocs.io/en/release/modules/uart/), [wifi](https://nodemcu.readthedocs.io/en/release/modules/wifi/), [tls](https://nodemcu.readthedocs.io/en/release/modules/tls/).
 
 - `nodemcu-512k.bin`: based on NodeMCU 1.5.4.1-final, and small enough to work on esp8266 512KB modules 
 - `nodemcu-1mb-plus.bin`: based on NodeMCU release (as of 10/11/2020), and meant for esp8266 modules with 1MB or more of flash
